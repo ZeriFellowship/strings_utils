@@ -1,0 +1,32 @@
+def to_uppercase(s):
+    """Convert the string to uppercase."""
+    return s.upper()
+
+def to_lowercase(s):
+    """Convert the string to lowercase."""
+    return s.lower()
+
+def capitalize_first(s):
+    """Capitalize the first letter of each word."""
+    return ' '.join(word.capitalize() for word in s.split())
+
+def remove_punctuation(s):
+    """Remove punctuation from the string."""
+    import string
+    return s.translate(str.maketrans('', '', string.punctuation))
+
+def replace_substring(s, old, new):
+    """Replace all occurrences of a substring with another substring."""
+    return s.replace(old, new)
+
+def count_occurrences(s, substring):
+    """Count occurrences of a substring within a string."""
+    return s.count(substring)
+
+def get_unique_characters(s):
+    """Return a set of unique characters in the string."""
+    return set(s)
+
+def is_anagram(s1, s2):
+    """Check if two strings are anagrams."""
+    return sorted(s1.replace(" ", "").lower()) == sorted(s2.replace(" ", "").lower())
