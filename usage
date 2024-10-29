@@ -1,0 +1,17 @@
+from string_utils import concatenate_strings, reverse_string, to_uppercase, capitalize_words
+
+# Concatenate strings
+result1 = concatenate_strings("Hello, ", "world!")
+print(result1)  # Output: Hello, world!
+
+# Reverse a string
+result2 = reverse_string("Hello!")
+print(result2)  # Output: !olleH
+
+# Convert to uppercase
+result3 = to_uppercase("hello")
+print(result3)  # Output: HELLO
+
+# Capitalize words
+result4 = capitalize_words("hello world")
+print(result4)  # Output: Hello World
