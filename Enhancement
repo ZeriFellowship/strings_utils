@@ -1,0 +1,40 @@
+# strings_utils.py
+
+def reverse_string(s):
+    """Return the reversed version of the string."""
+    return s[::-1]
+
+def count_vowels(s):
+    """Return the number of vowels in the string."""
+    vowels = "aeiouAEIOU"
+    return sum(1 for char in s if char in vowels)
+
+def is_palindrome(s):
+    """Check if the string is a palindrome."""
+    return s == s[::-1]
+
+def to_title_case(s):
+    """Convert the string to title case."""
+    return s.title()
+
+def remove_whitespace(s):
+    """Remove whitespace from the string."""
+    return ''.join(s.split())
+
+def count_words(s):
+    """Return the number of words in the string."""
+    return len(s.split())
+
+def find_substring(s, substring):
+    """Return the index of the first occurrence of a substring."""
+    return s.find(substring)
+
+# Example usage (commented out)
+# if __name__ == "__main__":
+#     print(reverse_string("hello"))
+#     print(count_vowels("hello world"))
+#     print(is_palindrome("racecar"))
+#     print(to_title_case("hello world"))
+#     print(remove_whitespace(" hello world "))
+#     print(count_words("hello world"))
+#     print(find_substring("hello world", "world"))
